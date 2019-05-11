@@ -1,2 +1,111 @@
-SDGFDFDGFHF
+teryr5yutrutyutFDGFHF
 file edited
+
+mkdir test
+cd test/
+git init
+(create repo on github)
+echo "dkfasfjdslf" >> file.txt ==>to create file.txt with conntent "dkfasfjdslf"
+cat file.txt ===> to print the content of file.txt
+git staut 
+git add file.txt ==> we also use (git add .) to add all the modified files but if we create new file than we add it 
+		     like (git add <file name>)
+git commit -am "initial commit"
+
+=============================	
+-am ==> add + commit message
+-m  ==> commit message
+=============================
+
+git push origin master ==> here the file.txt is added or commited and saved to the github
+git branch ==> to check the branches
+git checkout -b dev ==> creating new branch as well as making head to dev branch
+git branch
+ls ==> output: file.txt the exact copy of master brach is created to work safely
+cat file.txt
+nano file.txt ==> it opens file in terminal and also we edit and save there
+git checkout master 
+cat file.txt ==> nothing changed there
+clear 
+cd test/
+git checkout dev
+git status ==> output modified file.txt
+git commit -am "file modified"
+git push origin dev ==> pushed in dev branch it not effects the master branch
+cat file.txt
+git checkout master
+cat file.txt
+git status
+git checkout dev
+touch file2.txt
+echo "asdf;lkkj" >> file2.txt
+cat file2.txt
+git status
+git add file2.txt
+git commit -m "Added new file"
+git push origin dev
+ls ==> we found two files
+git checkout master
+ls ==> only one file
+git checkout dev
+git log ==> three commit will be shown 1 and 2 of file.txt 3. of file2.txt
+
+=========
+MERGING
+=========
+To merge first we have to be in the branch in which we have to merge (suppose in this case master)
+
+git checkout merge
+ 
+then merge the branch which we want (In this case dev)
+
+git merge --squash dev ==> --squash is use to create one single commit of whole branch since brach 
+			   have its own commits.
+ls
+git status
+git commit -m "Merged dev branch"
+git status
+git push origin master
+
+//IF WE Want To Push On Other branches except master than we have to do simply
+
+first checkout on branch in which you want to merge than
+
+git merge <branch name> (name of branch you want to merge)
+
+
+=======_______++++++++++++++__________=====================
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
